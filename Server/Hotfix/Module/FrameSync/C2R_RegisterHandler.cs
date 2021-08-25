@@ -38,7 +38,7 @@ namespace ETHotfix
 				accountInfo.Password = password;
 				await Game.Scene.GetComponent<DBProxyComponent>().Save(accountInfo);
 
-				response.Address = "";
+				response.Message = "注册成功!";
 				reply(response);
 			}
 			catch (Exception e)
