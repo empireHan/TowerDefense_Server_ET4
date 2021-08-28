@@ -87,3 +87,18 @@ message G2C_PlayerInfo // IResponse
     repeated int32 TestRepeatedInt32 = 4;
     repeated int64 TestRepeatedInt64 = 5;
 }
+
+message LevelConfig // IMessage
+{
+	int32 RpcId = 90;
+	int32 LevelIndex = 91;
+	string Config = 92;
+}
+
+message R2C_LevelConfig // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	repeated LevelConfig LevelConfigs = 93;
+}
