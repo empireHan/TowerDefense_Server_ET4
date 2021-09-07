@@ -2,9 +2,9 @@ using ETModel;
 
 namespace ETHotfix
 {
-    public class LevelConfig : Entity
+    public class LevelConfigDB : Entity
     {
-        int levelIndex;
-        string strConfig;
+        public int levelIndex;
+        public string strConfig;
     }
 }
